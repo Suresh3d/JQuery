@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../jquery-3.0.0.js"></script>
+</head>
+<body>
+    <div id="example" style="width:50px; height:50px; border:3px solid red">
+       <p> Hi There!</p>
+    </div>
+    <!--<button id="button">click</button>-->
+</body>
+
+<script>
+        $(document).ready(()=>{
+            $("body").append("<p id="+"example2"+">Its new!</p>");
+            $("#example2").css({"border" :"3px solid blue", "width":"200px", "height":"200px"});
+            $("#example2").after("this is second line");
+        });
+</script>
+</html>
